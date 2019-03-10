@@ -2,54 +2,96 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-  
-
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>portfolio project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-</head>
-
-
+    <script  src="js/index.js"></script>
+    <script  src="js/bootstrap.min.js"></script>
   </head>
-
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    
-
-    <nav id="navbar">
-      <a href="#welcome-section"> welcome</a>
-      <a href="#projects">our projects</a>
-    	
+    <!--begin navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Project Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/igakigongo" id="profile-link" target="_blank">Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-
-
-    <section id = "welcome-section">
-       <h1 >Bright and Forison are awesome </h1>
-     </section>
-
-
-
-
-     <section id = "projects">
-       <div class="project-tile">
-         <a href=""> more </a>
-       </div>
-       <div class="project-tile">
-          <a href=""> more </a>
-       </div>
-
-       <div class="project-tile">
-          <a href=""> more </a>
-       </div>
-     </section>
-     
-  
-
-    <a href="https://github.com/Forison" target="_blank" id="profile-link">github profile</a>
-
-
-    <script  src="js/index.js"></script>
-  </body>
+    <!-- end navbar -->
+    <!-- begin welcome section -->
+    <div class="jumbotron jumbotron-fluid" id="welcome-section">
+      <div class="container">
+        <h1 class="display-4">What our aspirations led us to doing!</h1>
+        <p class="lead">In this section, we would love to tell you more about the different work that we have done and what inspired us to do what we had to do.!!<br>
+        We would also like you to know that we are very happy that you have come to visit out sample web application.</p>
+      </div>
+    </div>
+    <!-- end welcome section -->
+    <!-- begin projects section -->
+    <section id="projects">
+      <div class="container">
+        <div class="card-deck project-tile">
+          <div class="card">
+            <img src="./images/lightbulb.jpg" class="card-img-top" alt="Light Bulb Project">
+            <div class="card-body">
+              <h5 class="card-title">Light Bulb Project</h5>
+              <p class="card-text">We did not invent it, but we have helped redefine it...!! <br>
+                <a href="#">Read more.....</a>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">January 2019</small>
+            </div>
+          </div>
+          <div class="card project-tile">
+            <img src="./images/scheduling.jpg" class="card-img-top" alt="Scheduling">
+            <div class="card-body">
+              <h5 class="card-title">Scheduler</h5>
+              <p class="card-text">A great scheduling tool that you can use with minimal effort to keep track of what should be done and when..!!.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">December 2007</small>
+            </div>
+          </div>
+          <div class="card project-tile">
+            <img src="./images/thinking.png" class="card-img-top" alt="Social App">
+            <div class="card-body">
+              <h5 class="card-title">Social</h5>
+              <p class="card-text">What if we came up with that social app that lets you be truly anonymous</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">July 2010</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end projects section -->
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Created by Forison & Edward</span>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body><!--begin the general code body-->
 </html>
